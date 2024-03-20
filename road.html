@@ -1,0 +1,115 @@
+<html>
+  <head>
+    <style>
+      body {
+        background-image: url(road.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .d {
+        width: 80px;
+        height: 80px;
+        background-color: white;
+        border-radius: 80px;
+      }
+      .d:hover {
+        background-color: red;
+      }
+      .e {
+        width: 80px;
+        height: 80px;
+        background-color: white;
+        border-radius: 80px;
+      }
+      .e:hover {
+        background-color: green;
+      }
+      .f {
+        width: 80px;
+        height: 80px;
+        background-color: white;
+        border-radius: 80px;
+      }
+      .f:hover {
+        background-color: yellow;
+      }
+      .g {
+        width: 15px;
+        height: 90px;
+        background-color: grey;
+        margin-left: 3px;
+        border-radius: 20px;
+      }
+      .a {
+        background-color: black;
+        width: 100px;
+      }
+      .bus {
+        height: 130px;
+        position: absolute;
+        left: 48.5vw;
+        bottom: 50.5vh;
+        z-index: 30;
+        animation: move 2s linear infinite 1s;
+      }
+      @keyframes move {
+        100% {
+          transform: translateX(50vw);
+        }
+      }
+      .car {
+        height: 130px;
+        position: absolute;
+        left: 38.5vw;
+        bottom: 13.5vh;
+        z-index: 30;
+        animation: moving 2s linear infinite 1s;
+      }
+      @keyframes moving {
+        100% {
+          transform: translateX(-50vw);
+        }
+      }
+      .d:hover > span {
+        animation: n;
+      }
+      @keyframes n {
+        100% {
+          animation-play-state: paused;
+        }
+      }
+      .f:hover > span {
+        animation: n;
+      }
+      @keyframes m {
+        100% {
+          animation-play-state: paused;
+        }
+      } 
+    </style>
+  </head>
+  <body>
+    <div class="a">
+      <center>
+        <div class="d">
+          <span class="car">
+            <img src="cars.jpg" height="150px" />
+          </span>
+          <span class="bus">
+            <img src="bus.jpg" alt="" />
+          </span>
+        </div>
+        <div class="e"></div>
+        <div class="f">
+          <!-- <span class="car">
+            <img src="cars.jpg" height="150px" />
+          </span>
+          <span class="bus">
+            <img src="bus.jpg" alt="" />
+          </span> -->
+        </div>
+        <div class="g"></div>
+      </center>
+    </div>
+  </body>
+</html>
